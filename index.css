@@ -70,7 +70,7 @@ body {
 }
 
 /* Banner */
-.banner {
+#banner {
     width: 100%;
     height: 500px;
     background-color: #121212;
@@ -82,13 +82,13 @@ body {
     background-repeat: no-repeat;
 }
 
-.banner h1 {
+#banner h1 {
     font-size: 2em;
     color: black;
     margin-bottom: 10px;
 }
 
-.banner p {
+#banner p {
     font-size: 1.1em;
     color: black;
 }
