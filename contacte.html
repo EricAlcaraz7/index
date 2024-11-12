@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console Gaming</title>
+    <link rel="stylesheet" href="contacte.css" />
+    <link rel="icon" href="Img/Logo.png" />
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="logo" src="Img/Logo.png" alt="logo principal" />
+      <div class="container">
+        <form class="search-box">
+          <input type="search" placeholder="Cerca" />
+        </form>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="indext.html">Inici</a></li>
+          <li><a href="catàleg.html">Catàleg</a></li>
+          <li><a href="productes.html">Productes</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="banner"></div>
+
+    <main class="main">
+      <div class="secinfo">
+        <h2>Informació de contacte</h2>
+        <p><strong>Telèfon:</strong> +34 623 456 789</p>
+        <p>
+          <strong>Adreça:</strong> Carrer de Pompeu Fabra, 14, 08402 Granollers,
+          Barcelona
+        </p>
+        <p><strong>Email:</strong> info@consolegaming.es</p>
+      </div>
+
+      <form action="#" method="post" id="contacte">
+        <div class="form">
+          <label for="nombre">Nom:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form">
+          <label for="email">Correu Electrònic:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form">
+          <label for="mensaje">Missatge:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar Missatge</button>
+      </form>
+
+      <div class="map">
+        <h2>La nostra ubicació</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.123456789!2d2.123456789!3d41.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a34b56c7890!2sLa+Botiga!5e0!3m2!1sca!2ses!4v123456789"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <h3>Xarxes Socials</h3>
+          <div class="red-social">
+            <img src="Img/twitter-icon.svg" alt=" twitter" />
+            <img src="Img/facebook-icon.svg" alt=" facebook" id="facebook" />
+            <img src="Img/instagram-icon.svg" alt="instagram" id="IG" />
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2024 <b>Console Gaming - Tots els drets reservats</b></small
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estils*/
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+#header img#logo {
+    width: 60px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container form input{
+    width: 300px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.container form button{
+    width: 50px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.container i{
+    color: black;
+
+}
+#header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#header nav ul li a:hover {
+    color: #333333;
+}
+
+/* Banner */
+#banner {
+    width: 100%;
+    height: 500px;
+    background-color: #121212;
+    text-align: center;
+    padding: 30px 20px;
+    background-image: url(Img/banner5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 1.1em;
+    color: black;
+}
+
+/*Main*/
+.main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+
+}
+
+.main h2 {
+    color: #002147;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* Info de contacte */
+.secinfo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.secinfo p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Formulari de contacte */
+#contacte {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form label {
+    font-size: 1em;
+    color: #002147;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #002147;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #002147;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffbf00;
+}
+
+/* Mapa */
+.map {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map h2 {
+    color: #002147;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.map iframe {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+
+/* Footer */
+.pie-pagina {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #1e1e2f;
+}
+
+.grupo-1 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 45px 0px;
+}
+
+.box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.red-social img {
+    display: inline-block; 
+    text-decoration: none; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 5px; 
+    margin-right: 10px; 
+}
+
+/*(móviles) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+}
+
+
+/*Tablets */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .product-list {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .product {
+        width: 45%; 
+    }
+} 
+

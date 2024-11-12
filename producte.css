@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+#header img#logo {
+    width: 60px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container form input{
+    width: 300px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.container form button{
+    width: 50px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.container i{
+    color: black;
+
+}
+#header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#header nav ul li a:hover {
+    color: #333333;
+}
+
+
+#banner {
+    width: 100%;
+    height: 500px;
+    background-color: #121212;
+    text-align: center;
+    padding: 30px 20px;
+    background-image: url(Img/banner3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 1.1em;
+    color: black;
+}
+
+/*Main*/
+.main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+/* Product List */
+.llistaproductes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.productes {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.productes:hover {
+    transform: translateY(-5px);
+}
+
+.productes img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nomproductes {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.descripcioproductes {
+    color: black;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.preuproductes {
+    font-size: 1.1em;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.productes button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.productrd button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+.pie-pagina {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #1e1e2f;
+}
+
+.grupo-1 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 45px 0px;
+}
+
+.box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.red-social img {
+    display: inline-block; 
+    text-decoration: none; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 5px; 
+    margin-right: 10px; 
+}
+
+/* (móviles) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+}
+
+/* Media Queries para tabletas */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .product-list {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .product {
+        width: 45%; 
+    }
+}
+
